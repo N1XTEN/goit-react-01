@@ -1,0 +1,82 @@
+.profileContainer {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  max-height: 400px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(243, 243, 243);
+}
+
+.userInfoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thumb {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(26, 23, 23);
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.userImg {
+  height: 100%;
+}
+
+.userName {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.userTag {
+  font-size: 20px;
+  color: #a6a6a6;
+  margin-bottom: 5px;
+}
+
+.userLocation {
+  font-size: 20px;
+  color: #a6a6a6;
+  margin-bottom: 5px;
+}
+
+.userStatistic {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(215, 215, 215);
+  border-top: 2px solid gray;
+}
+
+.userStatisticItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 5px;
+  width: calc(100% / 3);
+  position: relative;
+}
+
+.userStatisticItem:not(:last-child)::after {
+  content: "";
+  height: 100%;
+  background-color: gray;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.5px;
+}
+
+.userStatisticItem > span:nth-child(2) {
+  font-weight: 600;
+}
